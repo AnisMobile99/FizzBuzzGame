@@ -25,12 +25,16 @@ jobs:
 
       # 3. Install project dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm install && npm list
 
-      # 4. Lint the code using ESLint
+      # 4. Check ESLint binary permissions
+      - name: Check ESLint binary
+        run: ls -la ./node_modules/.bin/
+
+      # 5. Ensure permissions and run ESLint
       - name: Run ESLint
-        run: npm run lint
+        run: chmod +x ./node_modules/.bin/eslint && npm run lint
 
-      # 5. Run unit tests
+      # 6. Run unit tests
       - name: Run tests
         run: npm test
