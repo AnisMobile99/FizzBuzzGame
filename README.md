@@ -85,7 +85,7 @@ The CI configuration is located in:
 ```
 
 To view the CI status:
-![Node.js CI](https://github.com/AnisMobile99/FizzBuzzGame/actions/workflows/ci.yml/badge.svg)
+[![Node.js CI](https://github.com/AnisMobile99/FizzBuzzGame/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/AnisMobile99/FizzBuzzGame/actions/workflows/main.yml)
 
 ---
 
