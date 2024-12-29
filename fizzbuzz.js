@@ -20,7 +20,7 @@ export const fizzBuzz = (N) => {
 };
 
 /**
- * Streams FizzBuzz results for very large N
+ * Streams FizzBuzz results for very large N ;
  * @param {number} N - The maximum number to evaluate
  * @returns {Readable} - A readable stream of results
  */
